@@ -1,0 +1,42 @@
+/* Style for the whole page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Basic body styling */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Header style */
+h1 {
+  margin-top: 20px;
+  font-size: 24px;
+  color: #444;
+}
+
+/* Map container */
+#map {
+  width: 90%;       /* Set width to 90% of the viewport width */
+  max-width: 800px; /* Max width for larger screens */
+  height: 500px;    /* Fixed height */
+  margin-top: 20px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Info window styling - use Google Maps styling for customization */
+.infowindow {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+}
+

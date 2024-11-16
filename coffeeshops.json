@@ -1,0 +1,26 @@
+[
+  {
+    "name": "J.Co Donuts and Coffee",
+    "lat": 14.554223476679379,
+    "lng": 121.0545780230771,
+    "address": "3 G, Kidzania, Park Triangle, 11th Ave, Taguig, Metro Manila",
+    "sockets": 6,
+    "wifi": "Yes"
+  },
+  {
+    "name": "Krispy Kreme Doughnuts",
+    "lat": 14.550395809167062,
+    "lng": 121.05101922088338,
+    "address": "2nd Floor, Uptown Mall, BGC, Taguig, Metro Manila",
+    "sockets": 6,
+    "wifi": "No"
+  },
+  {
+    "name": "Coffee Project Makati",
+    "lat": 14.561873,
+    "lng": 121.020593,
+    "address": "Circuit Makati, Makati City, Metro Manila",
+    "sockets": 8,
+    "wifi": "Yes"
+  }
+]

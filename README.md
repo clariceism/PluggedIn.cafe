@@ -28,3 +28,36 @@ We welcome contributions! You can help by adding coffee shops from your area to 
 2. **Clone** your fork to your local machine:
    ```bash
    git clone https://github.com/your-username/PluggedIn.cafe.git
+3. **Open the `coffeeshops.json` file** and add the details of the coffee shop:
+
+   - **Name**: The name of the coffee shop.
+   - **Latitude & Longitude**: The geographical coordinates.
+   - **Number of Sockets**: How many sockets are available.
+   - **Wi-Fi**: Does the shop offer Wi-Fi? (Yes or No)
+4. **Commit your changes**:
+   ```bash
+   git add coffeeshops.json
+   git commit -m "Add <Cafe Name> in <City/Country>"
+
+   Push the changes to your forked repository:
+5. **Push** the changes to your forked repository:
+   ```bash
+    git push origin main
+6. **Create** a pull request to merge your changes into the main repository.
+
+---
+
+## Installation
+
+If you'd like to run this project locally, follow these steps:
+
+1. **Clone** this repository.
+    ```bash
+    git clone https://github.com/clariceism/PluggedIn.cafe.git
+2. Open the folder in your code editor and open index.html to view the map.
+
+---
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

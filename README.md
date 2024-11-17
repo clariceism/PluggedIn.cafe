@@ -38,8 +38,6 @@ We welcome contributions! You can help by adding coffee shops from your area to 
    ```bash
    git add coffeeshops.json
    git commit -m "Add <Cafe Name> in <City/Country>"
-
-   Push the changes to your forked repository:
 5. **Push** the changes to your forked repository:
    ```bash
     git push origin main

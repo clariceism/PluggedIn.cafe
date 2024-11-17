@@ -1,9 +1,46 @@
 function initMap() {
-  const mapCenter = { lat: 14.551900427662131, lng: 121.0516070500038 }; // Geographical center of the Earth
+  // Initialize the map with a zoomed-out view
   const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 17, // Zoom level
-    center: mapCenter,
+    center: { lat: 0, lng: 0 },  // Centered at the Equator, the world map center
   });
+
+  // Check if geolocation is available
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        // Get the user's current position
+        const userLocation = {
+          lat: position.coords.latitude,
+          lng: position.coords.longitude,
+        };
+
+        // Center the map on the user's location
+        map.panTo(userLocation);
+
+        // Gradually zoom in (from 2 to 15, over 3 seconds)
+        let zoomLevel = 10;  // Start from the initial zoom level
+        const targetZoom = 15;  // Final zoom level
+        const zoomInterval = 10;  // Interval in milliseconds
+        const zoomStep = 1;  // Zoom step (increases zoom by 1 per interval)
+
+        const zoomIn = setInterval(() => {
+          zoomLevel++;
+          if (zoomLevel <= targetZoom) {
+            map.setZoom(zoomLevel);  // Update the zoom level
+          } else {
+            clearInterval(zoomIn);  // Stop the zooming when the target is reached
+          }
+        }, zoomInterval);
+
+      },
+      () => {
+        console.error("Geolocation failed.");
+        alert("Unable to retrieve your location.");
+      }
+    );
+  } else {
+    alert("Geolocation is not supported by your browser.");
+  }
 
   // Fetch coffee shop data from JSON file
   fetch('coffeeshops.json')

@@ -4,20 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PluggedIn.cafe - Coffee Shops in BGC with Sockets</title>
-  <style>
-    /* Style the map container */
-    #map {
-      height: 700px;
-      width: 100%;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>Coffee Shops in BGC with Sockets</h1>
+  <h1>Plug in your devices in these coffee shops!</h1>
   
-  <!-- This is where the map will be displayed -->
-  <div id="map"></div>
+  <!-- Map Section -->
+  <div id="map"></div>  
+
+  <!-- FAQ Section -->
+  <div class="faq-section">
+    <div class="accordion">What is PluggedIn.cafe?</div>
+    <div class="panel">
+      <p>PluggedIn.cafe helps you find coffee shops with electric sockets for charging your devices in BGC, Taguig.</p>
+    </div>
+
+    <div class="accordion">How do you gather data on coffee shops?</div>
+    <div class="panel">
+      <p>We collect data from users and our own surveys to ensure accuracy.</p>
+    </div>
+
+    <div class="accordion">Can I contribute to the database?</div>
+    <div class="panel">
+      <p>Yes! You can contribute by sending information about new coffee shops with sockets to our team.</p>
+    </div>
+  </div>
 
   <!-- Google Maps API Script -->
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDN955R8xEgEFFYYXb8OPd59ib_qDJVNWE&callback=initMap"></script>
